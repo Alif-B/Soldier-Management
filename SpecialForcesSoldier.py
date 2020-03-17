@@ -75,8 +75,12 @@ class SFS:
         self._rank = rank
 
     def get_last_name(self):
-        """ getter that returns the full name of soldier """
+        """ getter that returns the last name of soldier """
         return self._lname
+
+    def get_first_name(self):
+        """ getter that returns the first name of soldier """
+        return self._fname
 
     def get_division(self):
         """ getter that returns the division """
@@ -128,3 +132,7 @@ class SFS:
     def get_trainings(self):
         """ Getter for the trainings """
         return self._trainings
+
+    def to_dict(self):
+        """ Is not implemented at this level """
+        raise NotImplementedError
